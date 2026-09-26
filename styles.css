@@ -113,3 +113,9 @@ h1 { font-size: clamp(60px, 8vw, 96px); line-height: 1; letter-spacing: -.035em;
   .header-contact { font-size: 11px; }
   .header-contact .icon { display: none; }
 }
+
+/* Embedded Find Us map with a full-area link to the cafe listing. */
+.map-preview { position: relative; width: 100%; height: 128px; overflow: hidden; border: 1px solid var(--border); border-radius: 5px; box-shadow: 0 1px 3px #0001; }
+.map-preview iframe { display: block; width: 100%; height: 100%; border: 0; pointer-events: none; }
+.map-preview-link { position: absolute; inset: 0; }
+.map-preview:focus-within { outline: 2px solid var(--accent); outline-offset: 2px; }
