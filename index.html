@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eda's Cafe</title>
+    <meta name="description" content="Eda's Cafe — artisan bakery specializing in custom cakes and fresh pastries.">
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        * { box-sizing: border-box; }
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            margin: 0; padding: 0;
+            background: #fff; color: #111827;
+            line-height: 1.5;
+        }
+        .banner {
+            background: linear-gradient(90deg, #dbeafe, #eff6ff);
+            border-bottom: 1px solid #cbd5e1;
+            padding: 1rem;
+            text-align: center;
+        }
+        .main { max-width: 800px; margin: 0 auto; padding: 2rem; }
+        h1 { font-size: 2.5rem; font-weight: 700; margin: 0 0 1rem; color: #1e40af; }
+        h2 { font-size: 1.5rem; font-weight: 600; margin: 2rem 0 1rem; color: #0f172a; }
+        .contact-links { display: flex; gap: 1rem; flex-wrap: wrap; }
+        .contact-link { display: flex; align-items: center; gap: 0.5rem; color: #1e40af; text-decoration: none; }
+        .section { margin-bottom: 2rem; }
+        .info-grid { display: grid; gap: 1rem; }
+        .hours-item { background: #f8fafc; padding: 1rem; border-radius: 8px; border: 1px solid #e2e8f0; }
+        .map-wrapper { aspect-ratio: 16/9; background: #f1f5f9; border-radius: 8px; margin: 1rem 0; display: flex; align-items: center; justify-content: center; color: #64748b; }
+        .cake-gallery { display: grid; gap: 1rem; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); }
+        .cake-item { background: #f8fafc; border-radius: 8px; overflow: hidden; border: 1px solid #e2e8f0; }
+        .cake-item img { width: 100%; height: 150px; object-fit: cover; }
+        .cake-item .info { padding: 1rem; }
+        .social-links { display: flex; gap: 1rem; }
+        .social-link { color: #1e40af; text-decoration: none; }
+        .qr-code { width: 150px; height: 150px; background: #e2e8f0; border-radius: 8px; margin: 0.5rem 0; }
+    </style>
+</head>
+<body>
+    <header class="banner">
+        <h1>Eda's Cafe</h1>
+        <div class="contact-links">
+            <a href="tel:+4475511262007" class="contact-link">📞 075 5126 2007</a>
+            <a href="mailto:edacaffe25@yahoo.com" class="contact-link">✉ edacaffe25@yahoo.com</a>
+        </div>
+    </header>
+
+    <main class="main">
+        <section class="section">
+            <h2>Order for Delivery</h2>
+            <p>Order online for delivery through our partner platforms.</p>
+            <a href="https://www.just-eat.co.uk/restaurant/eda-cafe" class="contact-link" style="font-weight: 600;">
+                🍕 Just Eat
+            </a>
+        </section>
+
+        <section class="section">
+            <h2>Follow Our Story</h2>
+            <div class="info-grid">
+                <div class="hours-item">
+                    <strong>Mon-Sat:</strong> 8am - 6pm
+                </div>
+                <div class="hours-item">
+                    <strong>Sun:</strong> 10am - 2pm
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2>Visit Us</h2>
+            <div style="display: flex; align-items: center; gap: 1rem;">
+                <div class="qr-code">QR Code for eda-cafe.co.uk</div>
+                <div>Scan for directions or visit eda-cafe.co.uk</div>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2>Find Us</h2>
+            <div class="map-wrapper">
+                Google Maps Embed would appear here
+            </div>
+            <a href="https://www.google.com/maps/search/eda-cafe" class="contact-link">
+                🗺️ Open in Google Maps
+            </a>
+        </section>
+
+        <section class="section">
+            <h2>Order Online</h2>
+            <a href="https://www.just-eat.co.uk/restaurant/eda-cafe" class="contact-link" style="font-weight: 600;">
+                🛒 Order via Just Eat
+            </a>
+        </section>
+
+        <section class="section">
+            <h2>Follow Us</h2>
+            <div class="social-links">
+                <a href="https://instagram.com" class="social-link">📷 Instagram</a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="section" style="background: #f8fafc; padding: 2rem; text-align: center; color: #64748b; margin-top: 3rem;">
+        <p>&copy; 2024 Eda's Cafe. All rights reserved.</p>
+    </footer>
+</body>
+</html>
