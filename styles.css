@@ -83,14 +83,21 @@ h1 { font-size: clamp(60px, 8vw, 96px); line-height: 1; letter-spacing: -.035em;
 .qr-mobile { display: none; }
 .qr-desktop { padding-top: 36px; }
 .qr-desktop img, .qr-mobile img { display: block; width: 80px; height: 80px; }
-.map-wrapper { position: relative; width: 100%; max-width: 400px; }
-.map-wrapper iframe { width: 100%; height: 200px; border: 0; border-radius: 5px; box-shadow: 0 1px 3px #0001; }
-.map-wrapper a { display: block; text-align: center; margin-top: 8px; color: var(--accent); font-size: 14px; }
+.map-link {
+  display: inline-flex; align-items: center; gap: 12px;
+  padding: 16px 24px; background: #fff; border: 1px solid var(--border);
+  border-radius: 11px; text-decoration: none; color: var(--foreground);
+  transition: box-shadow .2s;
+}
+.map-link:hover { box-shadow: 0 4px 15px rgba(40, 30, 20, .12); }
+.map-link .map-pin { width: 24px; height: 24px; flex: none; }
+.map-link span { line-height: 1.3; }
+.map-link strong { display: block; font-size: 14px; font-weight: 600; }
+.map-link small { display: block; color: var(--muted); font-size: 12px; }
 .footer-link .instagram { width: 20px; height: 20px; }
 
 @media (max-width: 767px) {
   .footer-grid { grid-template-columns: 1fr; }
-  .map-wrapper { max-width: none; }
   .qr-desktop { display: none; }
   .qr-mobile { display: block; margin-left: clamp(12px, 20vw, 80px); }
 }
