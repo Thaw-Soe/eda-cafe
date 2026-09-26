@@ -1,25 +1,157 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1" />
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Eda's Cafe — handcrafted cakes, pastries and cookies in Greenford, London.">
+    <meta property="og:title" content="Eda's Cafe">
+    <meta property="og:description" content="Handcrafted cakes, pastries and cookies — baked fresh every morning.">
+    <meta property="og:image" content="opengraph.jpg">
+    <meta property="og:type" content="website">
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <link rel="stylesheet" href="styles.css">
     <title>Eda's Cafe</title>
-    <meta name="description" content="Eda's Cafe — artisan bakery specializing in custom cakes and fresh pastries." />
-    <meta name="robots" content="index, follow" />
-    <meta property="og:title" content="Eda's Cafe" />
-    <meta property="og:description" content="Eda's Cafe — artisan bakery specializing in custom cakes and fresh pastries." />
-    <meta property="og:type" content="website" />
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="Eda's Cafe" />
-    <meta name="twitter:description" content="Eda's Cafe — artisan bakery specializing in custom cakes and fresh pastries." />
-    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <script type="module" crossorigin src="assets/index-CoMf29jp.js"></script>
-    <link rel="stylesheet" crossorigin href="assets/index-DnspxA4b.css">
   </head>
   <body>
-    <div id="root"></div>
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="brand" href="index.html" aria-label="Eda's Cafe home">Eda's Cafe</a>
+        <div class="header-contact">
+          <a href="https://wa.me/447551262007" target="_blank" rel="noopener noreferrer">
+            <svg class="icon whatsapp" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+              <circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.8"/>
+              <path d="M7.8 16.3 7 19l2.9-.7M8.8 7.8c-.7.7-.7 1.8-.1 2.9 1 2 2.7 3.7 4.8 4.6 1.1.5 2.1.5 2.8-.2l.7-.8-2.2-1.1-.8.9c-1.6-.6-2.9-1.9-3.6-3.4l.9-.9-1.6-2z" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            075 5126 2007
+          </a>
+          <a href="mailto:edacaffe25@yahoo.com">
+            <svg class="icon" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+              <rect x="3" y="5" width="18" height="14" rx="2" stroke="currentColor" stroke-width="1.7"/>
+              <path d="m4 7 8 6 8-6" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/>
+            </svg>
+            edacaffe25@yahoo.com
+          </a>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero" aria-labelledby="site-title">
+        <div class="hero-inner">
+          <p class="eyebrow">Artisan Bakery · London</p>
+          <h1 id="site-title">Eda's Cafe</h1>
+          <p class="intro">Handcrafted cakes, pastries and cookies — baked fresh every morning with the finest ingredients.</p>
+          <div class="cake-grid" aria-label="Our cakes and pastries">
+            <figure>
+              <div class="cake-image"><img src="cakes/almond-tart.jpg" alt="Almond tart" width="118" height="91"></div>
+              <figcaption>Almond Tart</figcaption>
+            </figure>
+            <figure>
+              <div class="cake-image"><img src="cakes/blueberry-cheesecake.jpg" alt="Blueberry cheesecake" width="116" height="89"></div>
+              <figcaption>Blueberry Cheesecake</figcaption>
+            </figure>
+            <figure>
+              <div class="cake-image"><img src="cakes/cheesecake.jpg" alt="Cheesecake" width="121" height="93"></div>
+              <figcaption>Cheesecake</figcaption>
+            </figure>
+            <figure>
+              <div class="cake-image"><img src="cakes/millefeuille.jpg" alt="Millefeuille" width="119" height="92"></div>
+              <figcaption>Millefeuille</figcaption>
+            </figure>
+            <figure>
+              <div class="cake-image"><img src="cakes/raspberry-trompe-loeil.jpg" alt="Raspberry trompe l'œil" width="119" height="91"></div>
+              <figcaption>Raspberry Trompe l'Œil</figcaption>
+            </figure>
+            <figure>
+              <div class="cake-image"><img src="cakes/tiramisu.jpg" alt="Tiramisu" width="119" height="96"></div>
+              <figcaption>Tiramisu</figcaption>
+            </figure>
+            <figure>
+              <div class="cake-image"><img src="cakes/princess.jpg" alt="Birthday Princess cake"></div>
+              <figcaption>Birthday Princess</figcaption>
+            </figure>
+            <figure>
+              <div class="cake-image"><img src="cakes/birthday-queen.jpg" alt="Birthday Queen cake"></div>
+              <figcaption>Birthday Queen</figcaption>
+            </figure>
+            <figure>
+              <div class="cake-image"><img src="cakes/yellow-flowers.jpg" alt="Yellow Flowers cake"></div>
+              <figcaption>Yellow Flowers</figcaption>
+            </figure>
+          </div>
+        </div>
+      </section>
+
+      <section class="delivery container" aria-labelledby="delivery-title">
+        <h2 id="delivery-title">Order for Delivery</h2>
+        <a class="delivery-link" href="https://www.just-eat.co.uk/restaurants-eda-caffe-greenford/menu#pre-order" target="_blank" rel="noopener noreferrer">
+          <svg class="icon justeat" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+            <path d="M3 9.5 12 3l9 6.5v2h-2v8.2c0 .7-.6 1.3-1.3 1.3H6.3c-.7 0-1.3-.6-1.3-1.3v-8.2H3zm5.2 2.3v6h2.2v-6zm5.4 0v6h2.2v-6z"/>
+          </svg>
+          Just Eat
+        </a>
+      </section>
+
+      <section class="social container" aria-labelledby="social-title">
+        <h2 id="social-title">Follow Our Story</h2>
+        <a href="https://www.instagram.com/edacaffe/" target="_blank" rel="noopener noreferrer">
+          <svg class="icon instagram" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+            <rect x="3" y="3" width="18" height="18" rx="5" stroke="currentColor" stroke-width="2"/>
+            <circle cx="12" cy="12" r="4" stroke="currentColor" stroke-width="2"/>
+            <circle cx="17.6" cy="6.6" r="1" fill="currentColor"/>
+          </svg>
+          Instagram
+        </a>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-grid">
+        <div>
+          <h3>Eda's Cafe</h3>
+          <p>Artisan bakery specializing in custom cakes and daily fresh pastries.</p>
+        </div>
+        <div>
+          <h4>Visit Us</h4>
+          <div class="visit-info">
+            <address>
+              322 Ruislip Rd E<br>
+              Greenford UB6 9BH<br><br>
+              Mon-Sat: 8am - 6pm<br>
+              Sun: 10am - 2pm
+            </address>
+            <a class="qr-mobile" href="https://www.eda-cafe.co.uk" target="_blank" rel="noopener noreferrer" aria-label="Visit www.eda-cafe.co.uk">
+              <img src="qr-code.png" alt="QR code for www.eda-cafe.co.uk" width="80" height="80">
+            </a>
+          </div>
+        </div>
+        <div class="qr-desktop">
+          <a href="https://www.eda-cafe.co.uk" target="_blank" rel="noopener noreferrer" aria-label="Visit www.eda-cafe.co.uk">
+            <img src="qr-code.png" alt="QR code for www.eda-cafe.co.uk" width="80" height="80">
+          </a>
+        </div>
+        <div>
+          <h4>Find Us</h4>
+          <div class="map">
+            <iframe src="https://maps.google.com/maps?q=322+Ruislip+Rd+E,+Greenford,+UB6+9BH&amp;output=embed&amp;z=15" title="Eda's Cafe location" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <a href="https://www.google.com/local/place/fid/0x4876130043d19fd9:0xa5b46969d586a448/photosphere?iu=https://streetviewpixels-pa.googleapis.com/v1/thumbnail?panoid%3D6JOUDlmAJ_qai5z1TTqw_w%26cb_client%3Dsearch.gws-prod.gps%26yaw%3D19.185343%26pitch%3D0%26thumbfov%3D100%26w%3D0%26h%3D0&amp;ik=CAISFjZKT1VEbG1BSl9xYWk1ejFUVHF3X3c%3D&amp;sa=X&amp;ved=2ahUKEwjW6LKCmPCVAxV1VkEAHZD_MDIQpx96BAg3EBE" target="_blank" rel="noopener noreferrer" aria-label="Open Eda's Cafe in Google Maps"></a>
+          </div>
+        </div>
+        <div>
+          <h4>Order Online</h4>
+          <a class="footer-link" href="https://www.just-eat.co.uk/restaurants-eda-caffe-greenford/menu#pre-order" target="_blank" rel="noopener noreferrer">Just Eat</a>
+        </div>
+        <div>
+          <h4>Follow Us</h4>
+          <a class="footer-link" href="https://www.instagram.com/edacaffe/" target="_blank" rel="noopener noreferrer" aria-label="Eda's Cafe on Instagram">
+            <svg class="icon instagram" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+              <rect x="3" y="3" width="18" height="18" rx="5" stroke="currentColor" stroke-width="2"/>
+              <circle cx="12" cy="12" r="4" stroke="currentColor" stroke-width="2"/>
+              <circle cx="17.6" cy="6.6" r="1" fill="currentColor"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
